@@ -1,0 +1,27 @@
+ds4_twist:
+  ros__parameters:
+    stamped: true
+    inputs:
+      velocity:
+        linear_x: axis_left_y
+        linear_y: axis_right_x
+        #linear_z:
+        angular_y: axis_right_y
+        angular_z: axis_left_x 
+
+
+      #linear:
+      #  x: axis_left_y
+      #  y: axis_left_x
+      #  z: axis_r2 - axis_l2
+      #angular:
+      #  x: -axis_right_x
+      #  y: axis_right_y
+      #  z: button_l1 - button_r1
+    scales:
+      velocity:
+        linear_x: 0.5
+        linear_y: 0.5
+        #linear_z:
+        angular_y: 0.5
+        angular_z: 1.0

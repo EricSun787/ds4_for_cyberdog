@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="addr" default="" />
+
+  <include file="$(find-pkg-share ds4_for_cyberdog)/launch/ds4_driver.launch.xml" >
+    <arg name="addr" value="$(var addr)" />
+    <arg name="use_standard_msgs" value="false" />
+  </include>
+
+  <node pkg="ds4_for_cyberdog" exec="ds4_cyberdog_node.py" name="ds4_twist" output="screen" >
+    <param from="$(find-pkg-share ds4_for_cyberdog)/config/twist_cyberdog.yaml" />
+  </node>
+</launch>
