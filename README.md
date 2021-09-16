@@ -46,7 +46,7 @@ $ roslaunch ds4_for_cyberdog ds4_cyberdog.launch.xml
 ```
 3.此时即可遥控机器人
 
-##TODO & Known Issue
+## TODO & Known Issue
 1. 更简便的配置蓝牙手柄连接
 2. 蓝牙手柄配对CyberDog后，下次启动无法自动配对
 3. 在使用手柄遥控前，需使用CyberDog APP点击开始遥控，进入遥控模式，否则无法遥控
