@@ -38,7 +38,6 @@ $ colcon build
 
 ### 运行功能包
 
-#### 将蓝牙手柄连接到CyberDog
 1. 将CyberDog连接到显示器，然后通过桌面图形化蓝牙配对DS4手柄
 2. 通过SSH终端连接到CyberDog，运行功能包
 ```console
@@ -47,7 +46,12 @@ $ roslaunch ds4_for_cyberdog ds4_cyberdog.launch.xml
 ```
 3.此时即可遥控机器人
 
-##TODO
-1. 蓝牙连接如何更简便
-2. 在使用手柄遥控前，需使用CyberDog APP点击开始遥控，进入遥控模式，否则无法遥控
-3. 将手柄功能加入自启动service
+##TODO & Known Issue
+1. 更简便的配置蓝牙手柄连接
+2. 蓝牙手柄配对CyberDog后，下次启动无法自动配对
+3. 在使用手柄遥控前，需使用CyberDog APP点击开始遥控，进入遥控模式，否则无法遥控
+4. 将手柄功能加入自启动service
+5. 添加更多功能
+-- 手柄灯效与CyberDog模式联动
+-- 手柄震动联动
+-- ...
